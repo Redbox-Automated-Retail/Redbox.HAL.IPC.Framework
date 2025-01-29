@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{28C6831D-CC34-4324-9F51-8A637D28B809}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Redbox.HAL.IPC.Framework</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <ApplicationVersion>1.13.0.27</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Redbox</RootNamespace>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="HAL\IPC\Framework\AbstractIPCResponse.cs" />
+    <Compile Include="HAL\IPC\Framework\AbstractServerSession.cs" />
+    <Compile Include="HAL\IPC\Framework\ByteAccumulator.cs" />
+    <Compile Include="HAL\IPC\Framework\ClientSessionFactory.cs" />
+    <Compile Include="HAL\IPC\Framework\IPCServiceHost.cs" />
+    <Compile Include="HAL\IPC\Framework\BatchCommandRunner.cs" />
+    <Compile Include="HAL\IPC\Framework\ClientCommand`1.cs" />
+    <Compile Include="HAL\IPC\Framework\ClientSession.cs" />
+    <Compile Include="HAL\IPC\Framework\CommandContext.cs" />
+    <Compile Include="HAL\IPC\Framework\CommandInstance.cs" />
+    <Compile Include="HAL\IPC\Framework\BinaryEncoding.cs" />
+    <Compile Include="HAL\IPC\Framework\CommandKeyValueAttribute.cs" />
+    <Compile Include="HAL\IPC\Framework\CommandRepository.cs" />
+    <Compile Include="HAL\IPC\Framework\CommandResult.cs" />
+    <Compile Include="HAL\IPC\Framework\CommandService.cs" />
+    <Compile Include="HAL\IPC\Framework\CommandParserState.cs" />
+    <Compile Include="HAL\IPC\Framework\CommandTokenizer.cs" />
+    <Compile Include="HAL\IPC\Framework\SessionConstants.cs" />
+    <Compile Include="HAL\IPC\Framework\CommunicationsConstants.cs" />
+    <Compile Include="HAL\IPC\Framework\FormMethodHandler.cs" />
+    <Compile Include="HAL\IPC\Framework\FormMethod.cs" />
+    <Compile Include="HAL\IPC\Framework\FormMethodParameter.cs" />
+    <Compile Include="HAL\IPC\Framework\HelpCommand.cs" />
+    <Compile Include="HAL\IPC\Framework\IPAddressHelper.cs" />
+    <Compile Include="HAL\IPC\Framework\MessageList.cs" />
+    <Compile Include="HAL\IPC\Framework\ProtocolHelper.cs" />
+    <Compile Include="HAL\IPC\Framework\RedboxChannelDecorator.cs" />
+    <Compile Include="HAL\IPC\Framework\ScriptCommand.cs" />
+    <Compile Include="HAL\IPC\Framework\ServerSession.cs" />
+    <Compile Include="HAL\IPC\Framework\ServerResponse.cs" />
+    <Compile Include="HAL\IPC\Framework\Statistics.cs" />
+    <Compile Include="HAL\IPC\Framework\StatisticsCommand.cs" />
+    <Compile Include="HAL\IPC\Framework\TcpClientSession.cs" />
+    <Compile Include="HAL\IPC\Framework\TcpServerSession.cs" />
+    <Compile Include="HAL\IPC\Framework\TcpServiceHost.cs" />
+    <Compile Include="HAL\IPC\Framework\TestCommand.cs" />
+    <Compile Include="HAL\IPC\Framework\Sockets\AsyncChannel.cs" />
+    <Compile Include="HAL\IPC\Framework\Sockets\TcpClientSession.cs" />
+    <Compile Include="HAL\IPC\Framework\Sockets\TcpServerSession.cs" />
+    <Compile Include="HAL\IPC\Framework\Sockets\TcpServiceHost.cs" />
+    <Compile Include="HAL\IPC\Framework\Server\AbstractIPCServiceHost.cs" />
+    <Compile Include="HAL\IPC\Framework\Server\HostInfo.cs" />
+    <Compile Include="HAL\IPC\Framework\Server\IpcServiceHostFactory.cs" />
+    <Compile Include="HAL\IPC\Framework\Properties\Settings.cs" />
+    <Compile Include="HAL\IPC\Framework\Pipes\BasePipeChannel.cs" />
+    <Compile Include="HAL\IPC\Framework\Pipes\IPCMessage.cs" />
+    <Compile Include="HAL\IPC\Framework\Pipes\IPCMessageFactory.cs" />
+    <Compile Include="HAL\IPC\Framework\Pipes\NamedPipeClientSession.cs" />
+    <Compile Include="HAL\IPC\Framework\Pipes\NamedPipeServer.cs" />
+    <Compile Include="HAL\IPC\Framework\Pipes\NamedPipeServerSession.cs" />
+    <Compile Include="HAL\IPC\Framework\Pipes\NamedPipeServiceHost.cs" />
+    <Compile Include="HAL\IPC\Framework\Pipes\ClientPipeChannel.cs" />
+    <Compile Include="HAL\IPC\Framework\Pipes\ServerPipeChannel.cs" />
+    <Compile Include="HAL\IPC\Framework\Client\ClientResponse.cs" />
+    <Compile Include="HAL\IPC\Framework\Client\ClientSession.cs" />
+    <Compile Include="IPC\Framework\ClientCommandResult.cs" />
+    <Compile Include="IPC\Framework\CommandAttribute.cs" />
+    <Compile Include="IPC\Framework\CommandFormAttribute.cs" />
+    <Compile Include="IPC\Framework\IPCProtocol.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="$(SolutionDir)lib\Redbox.HAL.Component.Model\Redbox.HAL.Component.Model.csproj">
+      <Project>{86986977-3d6f-4f59-bc0c-d181e7c4d334}</Project>
+      <Name>Redbox.HAL.Component.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="$(SolutionDir)lib\Redbox.HAL.Core\Redbox.HAL.Core.csproj">
+      <Project>{3b256763-2065-4304-b9b8-299a882a16b4}</Project>
+      <Name>Redbox.HAL.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

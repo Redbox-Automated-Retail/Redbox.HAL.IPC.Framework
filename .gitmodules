@@ -1,0 +1,6 @@
+[submodule "lib/Redbox.HAL.Core"]
+	path = lib/Redbox.HAL.Core
+	url = https://github.com/Redbox-Automated-Retail/Redbox.HAL.Core
+[submodule "lib/Redbox.HAL.Component.Model"]
+	path = lib/Redbox.HAL.Component.Model
+	url = https://github.com/Redbox-Automated-Retail/Redbox.HAL.Component.Model
